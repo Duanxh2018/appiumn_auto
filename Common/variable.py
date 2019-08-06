@@ -1,4 +1,4 @@
-__author__ = 'shikun'
+
 # 查找元素的方式
 class GetVariable(object):
     NAME = "name"

@@ -1,4 +1,3 @@
-__author__ = 'shikun'
 import unittest
 import os
 PATH = lambda p: os.path.abspath(
@@ -7,7 +6,7 @@ PATH = lambda p: os.path.abspath(
 from testBLL import appCase as b_app_case
 from testMode import appCase as m_app_case
 from testRunner.runnerBase import TestInterfaceCase
-from common.variable import GetVariable as common
+from Common.variable import GetVariable as common
 class testContact(TestInterfaceCase):
     def __init__(self, methodName=''):
         super(testContact, self).__init__(methodName)

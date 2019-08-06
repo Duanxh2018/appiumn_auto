@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-
 from email.header import Header
 from email.mime.text import MIMEText
 from email.utils import parseaddr, formataddr
@@ -7,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 import smtplib
 import configparser
-from common import operateFile as oa
+from Common import OperateFile as oa
 
 def read_email(Memail):
     if oa.OperateFile(Memail.file, "r").check_file() == False:

@@ -1,4 +1,4 @@
-__author__ = 'shikun'
+
 # -*- coding: utf-8 -*-
 import unittest
 from appium import webdriver

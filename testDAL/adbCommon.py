@@ -1,6 +1,4 @@
-
 import os
-
 
 class AndroidDebugBridge(object):
     def call_adb(self, command):

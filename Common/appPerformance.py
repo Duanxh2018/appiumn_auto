@@ -1,4 +1,3 @@
-__author__ = 'shikun'
 # -*- coding: utf-8 -*-
 import subprocess
 import re, os

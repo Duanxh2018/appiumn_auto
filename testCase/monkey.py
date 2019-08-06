@@ -1,4 +1,3 @@
-__author__ = 'shikun'
 import unittest
 import os
 PATH = lambda p: os.path.abspath(

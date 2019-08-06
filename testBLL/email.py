@@ -1,4 +1,3 @@
-__author__ = 'shikun'
 from testDAL import email
 
 def send_mail(memail):

@@ -1,4 +1,4 @@
-__author__ = 'shikun'
+
 # -*- coding: utf-8 -*-
 from testDAL import appCase
 class GetAppCase():
@@ -16,7 +16,7 @@ class GetAppCase():
         package： 包名
         devices: 设备名
         '''
-        self.kwargs= kwargs
+        self.kwargs = kwargs
         self.be = appCase.AppCase(**self.kwargs)
     def execCase(self, f, **kwargs):
         '''

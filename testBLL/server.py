@@ -1,4 +1,3 @@
-__author__ = 'shikun'
 from testDAL import server
 
 # 控制appium的服务

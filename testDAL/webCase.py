@@ -1,10 +1,10 @@
-__author__ = 'shikun'
+
 # -*- coding: utf-8 -*-
 import json
 
-from common import operateYaml, operateElement as bo
-from common.variable import GetVariable as common
-from common import testLog
+from Common import operateYaml, operateElement as bo
+from Common.variable import GetVariable as common
+from Common import testLog
 class WebCase():
 
     def __init__(self, test_module="", GetWebInfoCase="", GetWebCase=""):

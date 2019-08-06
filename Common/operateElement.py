@@ -1,4 +1,4 @@
-__author__ = 'shikun'
+
 # -*- coding: utf-8 -*-
 from selenium.webdriver.support.ui import WebDriverWait
 import selenium.common.exceptions

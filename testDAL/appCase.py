@@ -1,17 +1,17 @@
-__author__ = 'shikun'
+
 # -*- coding: utf-8 -*-
 import json
 
-from common import operateYaml, appPerformance as ap, operateElement as bo
-from common.variable import GetVariable as common
-from common import testLog
-from common import testLogScreen
-from common import reportPhone as rp
+from Common import operateYaml, appPerformance as ap, operateElement as bo
+from Common.variable import GetVariable as common
+from Common import testLog
+from Common import testLogScreen
+from Common import reportPhone as rp
 from testBLL import phoneBase as ba
 import os
-from common import  operateFile
-from common import basePickle
-from common import baseRandom
+from Common import OperateFile
+from Common import basePickle
+from Common import baseRandom
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
@@ -91,7 +91,7 @@ class AppCase():
         is_last: 最后一个用例 1, 0
         :return:
         '''
-        # logTest = testLog.myLog().getLog()
+        logTest = testLog.myLog().getLog()
         bc = self.getModeList(f)
         go = bo.OperateElement(driver=self.driver)
         ch_check = bc[-1]
@@ -188,7 +188,7 @@ class AppCase():
             # 最后case要写最下面的统计步骤
             self.write_detail(d_report, f=common.REPORT_INIT, key="init")
     def read_detail_report(self, f=""):
-       op = operateFile.OperateFile(f, "r")
+       op = OperateFile.OperateFile(f, "r")
        return op.read_txt_row()
 
     # 写入统计case的info,init情况
@@ -210,13 +210,13 @@ class AppCase():
         else:
             _result[key] = []
             _result[key].append(json)
-        op = operateFile.OperateFile(f, "w")
+        op = OperateFile.OperateFile(f, "w")
         op.write_txt(str(_result))
         print(_result)
     # 写入统计总的case的运行次数
     def write_report_collect(self, json, f=""):
         _read_json_temp = self.read_detail_report(f)
-        op = operateFile.OperateFile(f, "w")
+        op = OperateFile.OperateFile(f, "w")
         _result = {}
         if len(_read_json_temp) > 0:
             _read_json = eval(_read_json_temp)

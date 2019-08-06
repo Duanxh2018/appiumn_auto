@@ -1,6 +1,5 @@
-__author__ = 'shikun'
 import xlsxwriter
-from common.variable import GetVariable as gv
+from Common.variable import GetVariable as gv
 class OperateReport:
     def __init__(self, wd, data):
         self.wd = wd

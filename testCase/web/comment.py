@@ -1,4 +1,3 @@
-__author__ = 'shikun'
 from common.variable import GetVariable as common
 import os
 PATH = lambda p: os.path.abspath(

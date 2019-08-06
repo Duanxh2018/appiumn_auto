@@ -1,4 +1,3 @@
-__author__ = 'shikun'
 import math
 from math import  floor
 import subprocess
@@ -61,9 +60,9 @@ class ApkInfo():
         return result
 if __name__ == '__main__':
     ApkInfo(r"D:\app\appium_study\img\t.apk").get_apk_pkg()
-    # ApkInfo(r"D:\app\appium_study\img\t.apk").get_apk_version()
-    # ApkInfo(r"D:\app\appium_study\img\t.apk").get_apk_name()
-    ApkInfo(r"D:\app\appium_study\img\t.apk").get_apk_activity()
+    # # ApkInfo(r"D:\app\appium_study\img\t.apk").get_apk_version()
+    # # ApkInfo(r"D:\app\appium_study\img\t.apk").get_apk_name()
     # ApkInfo(r"D:\app\appium_study\img\t.apk").get_apk_activity()
+    # # ApkInfo(r"D:\app\appium_study\img\t.apk").get_apk_activity()
 
 

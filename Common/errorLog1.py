@@ -1,4 +1,4 @@
-__author__ = 'shikun'
+
 import os,time
 import subprocess
 
